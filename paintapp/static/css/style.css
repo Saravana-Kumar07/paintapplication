@@ -1,2 +1,47 @@
-* {
-}
+#content{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+     
+  }
+  #myCanvas{
+    background-color: #ffffff86; 
+    box-shadow: inset 0 0 5px #b6b6b6;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+  }
+  #buttonstyle{
+    background-color: #cf95ffc2;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  #buttonstyle:hover{
+    background-color:#ffffff36;
+    transition: 0.5s;
+  }
+  #bgimg{
+      background-image: url(./painting.png);
+  }
+  #reyna{
+      border: 2px solid #ffffff;
+      border-radius: 25px;
+      padding: 25px 25px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }
+  #reyna:hover{
+      opacity: 20%;
+      transition: 0.21s;
+  }

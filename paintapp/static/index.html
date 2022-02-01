@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <h1><center><U> CANVAS PAINT APPILICATION</U></center></h1>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paint Application</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      body {
-        background-color: rgb(240, 181, 142);
-        color: #17421d;
-      }
-      .container {
-        width: 1080px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      .content {
-        display: block;
-        width: 100%;
-        background-color: #d4cfff;
-        min-height: 800px;
-        margin: 100px 50px 0px 0px;
-        padding-top: 20px;
-      }
-      h1 {
-        text-align: center;
-      }
-      canvas {
-        margin-left: 40px;
-        margin-right: 40px;
-      }
-      .toolbar {
-        text-align: center;
-      }
-    </style>
-    <script type="text/javascript"></script>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <h1>Drawing Application</h1>
-      </div>
-    </div>
-    <script></script>
+  <body id="bgimg">
+    <div id="content"><center>
+      <canvas id="myCanvas" width="800" height="800" onclick="showCoords(event)"></center></canvas></div>
+      <center>
+      <button onclick="shape=1" id="buttonstyle" >SOLID CIRCLE</button>
+      <button onclick="shape=2" id="buttonstyle">CIRCLE</button>
+      <button onclick="shape=3" id="buttonstyle">SOLID SQUARE</button>
+      <button onclick="shape=4" id="buttonstyle">SQUARE</button>
+      <button onclick="shape=5" id="buttonstyle">SOLID TRIANGLE</button>
+      <button onclick="shape=6" id="buttonstyle">TRIANGLE</button>
+      <br>
+      <button onclick="size()" id="buttonstyle" >CHANGE SIZE</button></center>
+      <center>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(253, 253, 253);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(153, 39, 39);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(126, 73, 30);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(148, 150, 65);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(63, 126, 44);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(149, 196, 147);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(20, 106, 117);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(35, 63, 124);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(141, 45, 170);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(89, 62, 107);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(115, 101, 134);"></button>
+      <button onclick="change_color(this)" id="reyna" style="background: rgb(31, 27, 27);"></button>
+      </center>
+    <script src="js/script.js"></script>
+    <center><p id="demo" style="color: rgb(255, 255, 255);"></p></center>
+    <p 
+    style="font-family: 'Times New Roman', Times, serif; text-align: center; color:#320C0E; font-weight: bold;
+    font-size: larger;">Developed by S.Saravana Kumar</p>
   </body>
 </html>
